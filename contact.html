@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Erasmus Logan - AI Startup Consultancy</title>
+    <meta name="description" content="Contact Erasmus Logan to hire an AI startup consultancy. Get expert advice on AI pricing strategy, GTM, and technical scaling for your AI SaaS.">
+    <meta name="keywords" content="ai startup consultant, ai startup go to market, consultant for ai saas founders, ai startup pricing strategy, ai startup growth consulting, hire ai startup advisor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #14b8a6; /* Modern Teal */
+            --color-primary-dark: #0f766e;
+            --color-background: #ffffff;
+            --color-surface: #f9fafb;
+            --color-text: #111827;
+            --color-text-muted: #6b7280;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --transition: all 0.3s ease;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background-color: var(--color-background);
+            color: var(--color-text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        /* Layout & Containers */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        section {
+            padding: 5rem 0;
+        }
+
+        /* Navigation */
+        nav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--color-text-muted);
+        }
+
+        .nav-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-1px);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 6rem 0 4rem;
+            text-align: center;
+            background-color: var(--color-surface);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--color-text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Contact Grid */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 4rem;
+            margin-top: -2rem;
+        }
+
+        .contact-info h2 {
+            font-size: 1.875rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 2rem;
+            color: var(--color-text-muted);
+        }
+
+        .info-card {
+            background: var(--color-surface);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+        }
+
+        .info-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            color: var(--color-primary);
+        }
+
+        .info-card p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Form Styling */
+        .contact-form-wrapper {
+            background: white;
+            padding: 3rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+            border: 1px solid #f3f4f6;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            transition: border-color 0.2s ease;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: var(--color-primary);
+            ring: 2px solid rgba(20, 184, 166, 0.1);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        /* Use Cases Section */
+        .use-cases {
+            background: var(--color-surface);
+        }
+
+        .use-case-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .use-case-item {
+            padding: 1.5rem;
+            border-left: 3px solid var(--color-primary);
+            background: white;
+        }
+
+        .use-case-item h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 5rem 0 2rem;
+            border-top: 1px solid #f3f4f6;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+        }
+
+        .footer-logo {
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .footer-desc {
+            color: var(--color-text-muted);
+            font-size: 0.9rem;
+            max-width: 300px;
+        }
+
+        .footer-links h4 {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-links a {
+            font-size: 0.9rem;
+            color: var(--color-text-muted);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-primary);
+        }
+
+        .footer-bottom {
+            padding-top: 2rem;
+            border-top: 1px solid #f3f4f6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--color-text-muted);
+            transition: var(--transition);
+        }
+
+        .social-links svg:hover {
+            fill: var(--color-primary);
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 968px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            .hero h1 {
+                font-size: 2.25rem;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .use-case-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .nav-links {
+                display: none;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .hero {
+                padding: 4rem 0 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <span style="font-weight:700;font-size:1.25rem">Erasmus Logan</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-primary">Book a Consultation</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Scale Your AI Business</h1>
+            <p>From prototype to repeatable revenue. Stop chasing shiny demos and start building a real, scalable AI business with expert advisory.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Speak with an Advisor</h2>
+                    <p>Whether you're narrowing down your ICP or designing a usage-based pricing model, we provide the technical and GTM nuance that generic advisors miss.</p>
+                    
+                    <div class="info-card">
+                        <h3>Strategy Audit</h3>
+                        <p>Every engagement starts with a 30-minute deep dive into your current roadmap, pricing, and technical stack.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Response Time</h3>
+                        <p>We typically respond to new inquiries within 24 hours. Founders and CTOs are prioritized.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3>Our Location</h3>
+                        <p>Remote-first consultancy. Serving AI founders globally from London and San Francisco.</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="first-name">First Name</label>
+                                <input type="text" id="first-name" name="first-name" placeholder="Erasmus" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="last-name">Last Name</label>
+                                <input type="text" id="last-name" name="last-name" placeholder="Logan" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Work Email</label>
+                            <input type="email" id="email" name="email" placeholder="you@company.ai" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="stage">Startup Stage</label>
+                            <select id="stage" name="stage">
+                                <option value="idea">Idea Stage / Pre-product</option>
+                                <option value="pre-seed">Pre-Seed (MVP ready)</option>
+                                <option value="seed">Seed / Series A</option>
+                                <option value="scaling">Post-PMF Scaling</option>
+                                <option value="studio">Venture Studio / Enterprise</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goal">Primary Goal</label>
+                            <select id="goal" name="goal">
+                                <option value="icp">Defining ICP & Positioning</option>
+                                <option value="pricing">Pricing & Packaging Strategy</option>
+                                <option value="gtm">GTM & Sales Playbooks</option>
+                                <option value="technical">Technical Scaling & Data Strategy</option>
+                                <option value="funding">Investor Readiness & Pitching</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">How can we help?</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your product and current bottlenecks..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Schedule My Strategy Audit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-cases">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Specialized AI Support</h2>
+            <div class="use-case-grid">
+                <div class="use-case-item">
+                    <h4>For SaaS Products</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Moving from seat-based to value-based or usage-based pricing for AI features.</p>
+                </div>
+                <div class="use-case-item">
+                    <h4>For Venture Studios</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Standardizing playbooks for AI infrastructure and rapid technical validation.</p>
+                </div>
+                <div class="use-case-item">
+                    <h4>For CTOs</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">Build vs. buy decisions, LLM orchestration, and handling security/compliance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <a href="index.html" class="footer-logo">
+                        <span style="font-weight:700;font-size:1.25rem">Erasmus Logan</span>
+                    </a>
+                    <p class="footer-desc">The AI startup consultancy for founders who need more than just a deck. We bridge the gap between GTM strategy and AI technical nuance.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Platform</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Consultancy</h4>
+                    <ul>
+                        <li><a href="#">Pricing Strategy</a></li>
+                        <li><a href="#">GTM Playbooks</a></li>
+                        <li><a href="#">Data Strategy</a></li>
+                        <li><a href="#">Fractional Advisory</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Twitter">
+                            <svg viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Erasmus Logan. All rights reserved.</p>
+                <p>Built for the next generation of AI Founders.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
